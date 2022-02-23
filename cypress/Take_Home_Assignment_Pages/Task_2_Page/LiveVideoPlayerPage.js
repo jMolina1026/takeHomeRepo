@@ -60,7 +60,6 @@ export class LiveVideoPlayerPage extends GlobalBasePage{
                     }
                 })
 
-                //cy.iframeSwitch(this.iframeNew).find(this.captionButton).should('be.visible').and('have.attr', 'title', 'Change captions');
             }
         })
 

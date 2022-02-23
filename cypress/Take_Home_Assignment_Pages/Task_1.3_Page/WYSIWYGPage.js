@@ -2,7 +2,6 @@
 
 import { GlobalBasePage } from "../GlobalBasePage/GlobalBasePage";
 
-//npm install cypress-real-events
 
 export class WYSIWYGPage extends GlobalBasePage{
 
@@ -28,6 +27,9 @@ export class WYSIWYGPage extends GlobalBasePage{
 
     rewriteText(){
         cy.iframeSwitch(this.iframeNew).clear().type(this.newText);
+        cy.iframeSwitch(this.iframeNew).invoke('text').then((txt) => {
+            expect(txt).to.be.eq(this.newText);
+        });
     }
 
     changeTextColor(){
