@@ -8,7 +8,7 @@ describe('How to check a box and remove it', () => {
      *  Before Hook will launch all required actions before any testcase is launched.
      *  In this case, I have added the site URL required for the first task.
      *  This also allows for the site to be launched every time without the need to call the 'cy.visit' action again.
-     *  Task 1.2: Add & Delete
+     *  Task 1.2: Dynamic Controls
      */
 
      before(() => {

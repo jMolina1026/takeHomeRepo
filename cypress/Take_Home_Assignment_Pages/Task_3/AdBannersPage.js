@@ -21,8 +21,6 @@ export class AdBannersPage extends GlobalBasePage{
 
     verifyTopAdExists(){
 
-        //cy.get('div.pre-content .ad-container.desktop iframe').should('exist');
-
         cy.iframeSwitch(this.topAd).find(this.topAdImage).should('be.visible');
     }
 
