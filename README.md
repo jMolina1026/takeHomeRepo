@@ -10,9 +10,6 @@
 - Install Automation Framework: [Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress#System-requirements)
 ```sh
 Install Cypress via command: ${npm install cypress --save-dev}
-
-run below command when package.json file does not exists
-Create package.json file using command: ${text in here}
 ```
 - Install 2nd Automation Framework: [TestCafe](https://testcafe.io/documentation/402635/getting-started)
 
@@ -67,13 +64,13 @@ As an alternative to Cypress, `TestCafe` was installed to verify that the ads du
 The following will explain how to run js file using `TestCafe`.
 
 ```sh
-Run 'TestCafe' via Terminal: ${npx testcafe chrome "./testCafe/testCafeAdBanner.js"}
+Run 'TestCafe' via Terminal: ${npx testcafe chrome "./testCafe/testCafeAdBanner.js" -e}
 Test should run and verify that the ads due exist in the page.
 ```
 
 
 
-## TestCases are located by clicking this [link]()
+## TestCases are located by clicking this [link](https://docs.google.com/spreadsheets/d/1lmpgjmLNi6hd2bgbRHpHAWqRJBTX-qGdJvgKeD8yKbY/edit?usp=sharing)
 -- Note: These testcases are a supplement to help understand how each and every testcase was translated into code, therefore a Cypress Test
 
 ## **Findings**
